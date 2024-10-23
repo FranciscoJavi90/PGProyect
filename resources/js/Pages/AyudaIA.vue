@@ -11,6 +11,7 @@ const isLoading = ref(false);
 
 // Inicializa el cliente de OpenAI
 const openai = new OpenAI({
+  apiKey: import.meta.env.VITE_OPENAI_API_KEY, // Usa la variable de entorno
   dangerouslyAllowBrowser: true // Solo para desarrollo, no uses esto en producción
 });
 
